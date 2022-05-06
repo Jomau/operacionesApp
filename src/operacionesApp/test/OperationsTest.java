@@ -6,6 +6,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import operacionesApp.Diff;
+import operacionesApp.Division;
 import operacionesApp.Multiplication;
 import operacionesApp.Operations;
 import operacionesApp.Sum;
