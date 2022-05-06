@@ -24,6 +24,8 @@ class OperationsTest {
 	@Test 
 	void diffTest(){
 		Diff d = new Diff();
+		int valueCalculate = d.calculate(5,2);
+		assertEquals(3, valueCalculate);
 	}
 	
 	
