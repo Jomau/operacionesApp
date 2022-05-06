@@ -19,5 +19,11 @@ class OperationsTest {
 		int valueCalculate = s.calculate(2,2);
 		assertEquals(4, valueCalculate);
 	}
+	
+	@Test diffTest(){
+		Diff d = new Diff();
+	}
+	
+	
 
 }
