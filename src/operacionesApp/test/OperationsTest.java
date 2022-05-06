@@ -6,9 +6,12 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import operacionesApp.Diff;
+import operacionesApp.Operations;
 import operacionesApp.Sum;
 
 class OperationsTest {
+	
+	private Operations operation;
 
 	@BeforeEach
 	void setUp() throws Exception {
@@ -16,15 +19,15 @@ class OperationsTest {
 
 	@Test
 	void sumTest() {
-		Sum s = new Sum();
-		int valueCalculate = s.calculate(2,2);
+		this.operation = new Sum(2,2);
+		int valueCalculate = this.operation.calculate();
 		assertEquals(4, valueCalculate);
 	}
 	
 	@Test 
 	void diffTest(){
-		Diff d = new Diff();
-		int valueCalculate = d.calculate(5,2);
+		this.operation = new Diff(5,2);
+		int valueCalculate = this.operation.calculate();
 		assertEquals(3, valueCalculate);
 	}
 	

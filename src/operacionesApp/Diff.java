@@ -1,9 +1,16 @@
 package operacionesApp;
 
-public class Diff {
+public class Diff extends Operations {
 
-	public int calculate(int i, int j) {
-		return i - j;
+	public Diff(int minuend, int subtracting) {
+		this.term1 = minuend;
+		this.term2 = subtracting;
+
+	}
+
+	@Override
+	public int calculate() {
+		return this.term1 - this.term2;
 	}
 
 }

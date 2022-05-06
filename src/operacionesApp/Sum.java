@@ -1,9 +1,15 @@
 package operacionesApp;
 
-public class Sum {
+public class Sum extends Operations {
+	
+	public Sum(int term1, int term2) {
+		this.term1 = term1;
+		this.term2 = term2;
+	}
 
-	public int calculate(int i, int j) {
-		return i + j;
+	@Override
+	public int calculate() {
+		return this.term1 + this.term2;
 	}
 
 }
