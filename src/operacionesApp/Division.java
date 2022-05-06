@@ -2,10 +2,14 @@ package operacionesApp;
 
 public class Division extends Operations {
 
+	public Division(int dividend, int divider) {
+		this.term1 = dividend;
+		this.term2 = divider;
+	}
+
 	@Override
 	public int calculate() {
-		// TODO Auto-generated method stub
-		return 0;
+		return this.term1 / this.term2;
 	}
 
 }

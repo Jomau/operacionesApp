@@ -12,7 +12,7 @@ import operacionesApp.Operations;
 import operacionesApp.Sum;
 
 class OperationsTest {
-	
+
 	private Operations operation;
 
 	@BeforeEach
@@ -21,31 +21,30 @@ class OperationsTest {
 
 	@Test
 	void sumTest() {
-		this.operation = new Sum(2,2);
+		this.operation = new Sum(2, 2);
 		int valueCalculate = this.operation.calculate();
 		assertEquals(4, valueCalculate);
 	}
-	
-	@Test 
-	void diffTest(){
-		this.operation = new Diff(5,2);
+
+	@Test
+	void diffTest() {
+		this.operation = new Diff(5, 2);
 		int valueCalculate = this.operation.calculate();
 		assertEquals(3, valueCalculate);
 	}
-	
-	@Test 
-	void multiplicationTest(){
-		this.operation = new Multiplication(5,2);
+
+	@Test
+	void multiplicationTest() {
+		this.operation = new Multiplication(5, 2);
 		int valueCalculate = this.operation.calculate();
 		assertEquals(10, valueCalculate);
 	}
-	
+
 	@Test
 	void divisionTest() {
-		this.operation = new Division(4,2);
+		this.operation = new Division(4, 2);
 		int valueCalculate = this.operation.calculate();
-		assertEquals(10, valueCalculate);
+		assertEquals(2, valueCalculate);
 	}
-	
 
 }
