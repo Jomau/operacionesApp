@@ -31,6 +31,11 @@ class OperationsTest {
 		assertEquals(3, valueCalculate);
 	}
 	
+	@Test 
+	void multiplicationTest(){
+		this.operation = new Multiplication(5,2);
+	}
+	
 	
 
 }
