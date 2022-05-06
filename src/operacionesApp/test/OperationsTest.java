@@ -43,6 +43,8 @@ class OperationsTest {
 	@Test
 	void divisionTest() {
 		this.operation = new Division(4,2);
+		int valueCalculate = this.operation.calculate();
+		assertEquals(10, valueCalculate);
 	}
 	
 
