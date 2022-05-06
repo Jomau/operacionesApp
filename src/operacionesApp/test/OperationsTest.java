@@ -6,6 +6,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import operacionesApp.Diff;
+import operacionesApp.Multiplication;
 import operacionesApp.Operations;
 import operacionesApp.Sum;
 
@@ -34,6 +35,8 @@ class OperationsTest {
 	@Test 
 	void multiplicationTest(){
 		this.operation = new Multiplication(5,2);
+		int valueCalculate = this.operation.calculate();
+		assertEquals(10, valueCalculate);
 	}
 	
 	
