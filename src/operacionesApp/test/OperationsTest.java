@@ -15,7 +15,7 @@ class OperationsTest {
 
 	@Test
 	void sumTest() {
-		
+		Sum s = new Sum();
 	}
 
 }
