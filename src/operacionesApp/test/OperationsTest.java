@@ -16,6 +16,8 @@ class OperationsTest {
 	@Test
 	void sumTest() {
 		Sum s = new Sum();
+		int valueCalculate = s.calculate(2,2);
+		assertEquals(4, valueCalculate);
 	}
 
 }
